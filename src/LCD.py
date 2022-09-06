@@ -165,11 +165,6 @@ class LCD1602:  # pylint: disable=missing-class-docstring
 
 
 def subcmd_test(lcd: LCD1602) -> None:
-    """_summary_
-
-    Args:
-        lcd (LCD1602): _description_
-    """
     lcd.set_pos(0, 0)
     for i in range(0, 256):
         lcd.data(i)
